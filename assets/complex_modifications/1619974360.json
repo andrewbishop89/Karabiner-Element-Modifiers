@@ -1,5 +1,5 @@
 {
-  "title": "Windows Keyboard on Mac",
+  "title": "Windows Keyboard on Mac (ONLY EXTERNAL KEYBOARD)",
   "rules": [
     {
       "description": "Swap left_command with left_option",
@@ -16,6 +16,16 @@
             {
               "key_code": "left_option"
             }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "product_id": 50501
+                }
+              ]
+            }
           ]
         },
         {
@@ -29,6 +39,16 @@
           "to": [
             {
               "key_code": "left_command"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "product_id": 50501
+                }
+              ]
             }
           ]
         }
@@ -49,6 +69,16 @@
             {
               "key_code": "right_option"
             }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "product_id": 50501
+                }
+              ]
+            }
           ]
         },
         {
@@ -62,6 +92,16 @@
           "to": [
             {
               "key_code": "right_command"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "product_id": 50501
+                }
+              ]
             }
           ]
         }
